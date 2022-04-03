@@ -1,6 +1,6 @@
 {
-  "name": "Podskok&Co",
-  "description": "Voprosik na kontrole.",
+  "name": "Svaz",
+  "description": "Prilozhuha",
   "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
   "env": {
      "ENCRYPT": {
