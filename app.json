@@ -1,0 +1,53 @@
+{
+  "name": "Podskok&Co",
+  "description": "Voprosik na kontrole.",
+  "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
+  "env": {
+     "ENCRYPT": {
+      "description": "Encryption method.",
+      "value": "aes-256-gcm"
+    },
+     "PASSWORD": {
+      "description": "Password",
+      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+    },
+
+     "V2_Path": {
+      "description": "Handler path. Auto-generated with some secret value.",
+      "generator": "secret"
+    },
+
+     "SS_DNS": {
+      "description": "DNS server(s) to use instead of one provided by your cloud server.",
+      "value": "1.1.1.1,1.0.0.1"
+    },
+
+     "AppName": {
+      "description": "App Name filled in at the top (or even full domain if there is a custom one) to generate the configuration and QR code. If you don’t want to generate it, enter no",
+      "value": "no"
+    },
+
+    "QR_Path": {
+       "description": "Password-protected path to page with ss:// configuration link and a QR code. Cannot be the same as V2_Path. If the AppName variable is no, this variable has no effect",
+       "value": "/getconfig"
+     },
+
+    "QR_User": {
+       "description": "QR_Path page auth username (http basic auth).",
+       "value": "anonimus"
+     },
+
+    "QR_Pass": {
+       "description": "QR_Path page auth password (http basic auth).",
+       "value": "c16f96e0-f752-4b64-a812-fcf2da707fc5"
+     },
+
+    "Proxy_Path": {
+       "description": "Site to proxy when trying to access urls other than QR_path/V2_Path. Must include scheme and not include a trailing slash.",
+       "value": "https://google.com"
+     }
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
